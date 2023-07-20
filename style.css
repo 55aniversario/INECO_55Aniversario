@@ -36,7 +36,7 @@ a {
   position: relative;
   width: 100%;
   height: 100%;
-  font-size: 30px;
+  font-size: 1rem;
   background: url("imagenes/00.gif") no-repeat center center;
 }
 
@@ -130,13 +130,6 @@ a {
   text-align: center;
 }
 
-/* .scr[data-id="2"],
-.scr[data-id="3"],
-.scr[data-id="4"],
-.scr[data-id="5"]{
-  background: url("imagenes/05.gif") no-repeat center center;
-} */
-
 .scr[data-id="Welcome11"] {
   position: relative;
   width: 100%;
@@ -179,22 +172,22 @@ b {
 }
 
 h1 {
-  font-size: 53px;
+  font-size: 65%;
   display: block;
   color: #ffffff;
   font-family: Poppins extralight;
 }
 
 h2 {
-  margin: 30% 3%;
-  font-size: 100%;
+  margin: 15% 3%;
+  font-size: 1.6rem;
   display: block;
   color: #ffffff;
   font-family: Poppins;
 }
 
 h3 {
-  font-size: 90%;
+  font-size: 1.8rem;
   display: block;
   color: #1a4488;
   font-family: Poppins extralight;
@@ -211,10 +204,10 @@ span {
   z-index: 2;
   top: 0; /* Anclamos el menú en la parte superior */
   left: 0; /* Anclamos el menú en la parte izquierda */
-  width: 100%;  
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .menu .imagenCorporativa {
@@ -240,7 +233,8 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.3rem;  
+  gap: 1.3rem;
+  margin: 0 1rem;
 }
 .navegacion #menuList li:first-child {
   margin-top: 2rem;
@@ -249,7 +243,7 @@ span {
 /*TEXTO MENU*/
 .navegacion #menuList li {
   font-size: 1.2em;
-  width: 100%;  
+  width: 100%;
   text-align: left;
 }
 
@@ -311,9 +305,8 @@ span {
 .ct h3 {
   margin: 0px 80px;
 }
-.ct b{
+.ct b {
   margin: 0 2rem;
-
 }
 .left,
 .right {
@@ -324,7 +317,6 @@ span {
   width: 30%;
   top: 0;
 }
-
 
 .right {
   left: 30%;
@@ -337,7 +329,7 @@ span {
   left: 50%;
   margin-left: -100px;
   z-index: 3000;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
 }
 .scrolldown {
@@ -347,7 +339,7 @@ span {
   left: 50%;
   margin-left: -100px;
   z-index: 3000;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
 }
 .an.visible .ct {
@@ -373,7 +365,7 @@ span {
   position: fixed;
   z-index: 2;
   margin-top: 2rem;
-  margin-left: 2.5rem;
+  margin-left: 3.5rem;
   color: #1a4488;
   cursor: pointer;
 }
@@ -387,6 +379,7 @@ span {
 .nums {
   display: flex;
   flex-direction: column;
+  gap: 4.5rem;
 }
 
 .nums span {
@@ -395,7 +388,7 @@ span {
 
 .numeracion {
   margin-top: -6rem;
-  font-size: 16rem;
+  font-size: 13rem;
   color: #ffffff;
   opacity: 0.5;
   font-family: Poppins;
@@ -469,5 +462,140 @@ span {
 @media (max-width: 1400px) {
   .ct b {
     font-size: 3rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
+  }
+  .nums {
+    gap: 0;
+  }
+}
+
+@media(max-width: 845px) {
+  .prevSent {
+    right: 15%;
+  }
+
+  .left .ct b h2{
+    font-size: 1em;
+  }
+
+  .nextSent,
+  .prevSent {
+    position: fixed;
+    z-index: 99999;
+    font-size: 2rem;
+    color: #1a4488;
+    bottom: 5%;
+    cursor: pointer;
+  }
+  .ct b {
+    font-size: 2rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
+  }
+  .left .ct b h2{
+    font-size: 1.2rem;
+  }
+
+  .ct h3{
+    font-size: 1.3rem;
+  }
+  
+  .numeracion{
+    font-size: 8rem;
+  }
+  .nums span{
+    margin-top: 10rem;
+  }
+}
+
+/* media mobile*/
+@media (max-width: 599px) {
+
+  .numeracion {
+    margin-top: -6rem;
+    font-size: 7rem;
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 30% 3%;
+    font-size: 1.1rem;
+    display: block;
+    color: #ffffff;
+    font-family: Poppins;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    display: block;
+    color: #1a4488;
+    font-family: Poppins extralight;
+  }
+
+  .navegacion #menuList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 0 0.5rem;
+    padding-left: 1.3rem;
+  }
+
+  .navegacion #menuList li {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .prevSent {
+    right: 17%;
+  }
+
+  .menu .imagenCorporativa {
+    width: 20%;
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .imagenCorporativa img{
+    width: 120%;
+  }
+  .ct b {
+    font-size: 1.8rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
+  }
+  .left .ct b h2{
+    font-size: 1rem;
+  }
+
+  .ct h3{
+    font-size: 1.1rem;
+  }
+  
+  .numeracion{
+    font-size: 7rem;
+  }
+  .nums {
+    gap: 0;
+  }
+}
+
+@media (max-width: 427px) {
+
+  .ct b {
+    font-size: 1.5rem;
+  }
+  .left .ct b h2{
+    font-size: 10px;
+  }
+
+  .ct h3{
+    font-size: 12px;
+  }
+  
+  .numeracion{
+    font-size: 3.5rem;
+  }
+  .nums {
+    gap: 2rem;
   }
 }
