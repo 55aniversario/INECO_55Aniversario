@@ -584,6 +584,13 @@ span {
 
 @media (max-width: 427px) {
 
+  .menu .navegacion {
+    width: 40%;    
+  }
+  .enlace 
+  {
+    font-size: 10px;
+  }
   .ct b {
     font-size: 1.5rem;
   }
