@@ -31,6 +31,9 @@ a {
   height: 100%;
 }
 
+.right .ct{
+  background-color: white;
+}
 .scr,
 .pane {
   position: relative;
