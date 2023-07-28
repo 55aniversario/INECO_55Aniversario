@@ -1,3 +1,23 @@
+@font-face  { font-family: 'Poppins-Black'; src: url('fonts/Poppins-Black.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-BlackItalic'; src: url('fonts/Poppins-BlackItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Bold'; src: url('fonts/Poppins-Bold.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-BoldItalic'; src: url('fonts/Poppins-BoldItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraBold'; src: url('fonts/Poppins-ExtraBold.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraBoldItalic'; src: url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraLight'; src: url('fonts/Poppins-ExtraLight.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraLightItalic'; src: url('fonts/Poppins-ExtraLightItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Italic'; src: url('fonts/Poppins-Italic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Light'; src: url('fonts/Poppins-Light.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-LightItalic'; src: url('fonts/Poppins-LightItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Medium'; src: url('fonts/Poppins-Medium.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-MediumItalic'; src: url('fonts/Poppins-MediumItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Regular'; src: url('fonts/Poppins-Regular.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-SemiBold'; src: url('fonts/Poppins-SemiBold.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-SemiBoldItalic'; src: url('fonts/Poppins-SemiBoldItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Thin'; src: url('fonts/Poppins-Thin.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ThinItalic'; src: url('fonts/Poppins-ThinItalic.ttf') format('truetype'); }
+
+
 * {
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -416,14 +436,12 @@ span {
   font-size: 3rem;
   color: #1a4488;
   bottom: 5%;
-  cursor: pointer;
-}
-.nextSent {
   right: 5%;
+  cursor: pointer;
 }
 
 .prevSent {
-  right: 10%;
+  bottom: 15%;
 }
 
 @-webkit-keyframes letter-glow {
@@ -472,23 +490,15 @@ span {
 }
 
 @media(max-width: 845px) {
-  .prevSent {
-    right: 15%;
-  }
-
   .left .ct b h2{
     font-size: 1em;
   }
 
   .nextSent,
   .prevSent {
-    position: fixed;
-    z-index: 99999;
     font-size: 2rem;
-    color: #1a4488;
-    bottom: 5%;
-    cursor: pointer;
   }
+  
   .ct b {
     font-size: 2rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
   }
@@ -551,7 +561,7 @@ span {
   }
 
   .prevSent {
-    right: 17%;
+    bottom: 17%;
   }
 
   .menu .imagenCorporativa {

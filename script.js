@@ -1,3 +1,5 @@
+$(document).ready(function() {
+    
 const n1 = document.getElementById("n1");
 const b1 = document.getElementById("b1");
 Init();
@@ -15,6 +17,22 @@ $(".pane,.scrzone").mousewheel(function (event) {
     }
   }
 });
+
+
+var ts;
+$(document).bind('touchstart', function (e){
+   ts = e.originalEvent.touches[0].clientY;
+});
+
+$(document).bind('touchend', function (e){
+   var te = e.originalEvent.changedTouches[0].clientY;
+   if(ts > te + 5){
+      UpdateScreen("+");
+   }else if(ts < te - 5){
+      UpdateScreen("-");
+   }
+});
+
 
 //Init
 function Init() {
@@ -34,7 +52,7 @@ function Init() {
 //ANIMATE
 function UpdateScreen(operator) {
   $ActualSlide = $CibleSlide;
-
+    if (operator !== "+" || (operator === "+" && $ActualSlide !== "Conclusion")) {
   
 
   // console.log($ActualSlide);
@@ -79,15 +97,18 @@ function UpdateScreen(operator) {
       },
     }); //Horizontal ou vertical
   } else {
-    TweenMax.to(window, $ScrollSpeed, {
-      scrollTo: ".pane[data-id=" + $CibleSlide + "]",
-      ease: Power2.easeOut,
-      onComplete: function () {
-        $ScrollState = false;
-        $CibleSlideDOM.addClass("visible");
-      },
-    }); //Normal
+    if ($CibleSlide !== undefined) {
+      TweenMax.to(window, $ScrollSpeed, {
+        scrollTo: ".pane[data-id=" + $CibleSlide + "]",
+        ease: Power2.easeOut,
+        onComplete: function () {
+          $ScrollState = false;
+          $CibleSlideDOM.addClass("visible");
+        },
+      }); //Normal
+    }
   }
+    }
 }
 
 //Init() On Resize
@@ -308,4 +329,7 @@ $("#enlace12").click(()=>{
       $ScrollState = false;
       $CibleSlideDOM.addClass("visible");
     }});
+});
+
+
 });
