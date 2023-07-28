@@ -1,0 +1,621 @@
+@font-face  { font-family: 'Poppins-Black'; src: url('fonts/Poppins-Black.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-BlackItalic'; src: url('fonts/Poppins-BlackItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Bold'; src: url('fonts/Poppins-Bold.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-BoldItalic'; src: url('fonts/Poppins-BoldItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraBold'; src: url('fonts/Poppins-ExtraBold.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraBoldItalic'; src: url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraLight'; src: url('fonts/Poppins-ExtraLight.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ExtraLightItalic'; src: url('fonts/Poppins-ExtraLightItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Italic'; src: url('fonts/Poppins-Italic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Light'; src: url('fonts/Poppins-Light.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-LightItalic'; src: url('fonts/Poppins-LightItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Medium'; src: url('fonts/Poppins-Medium.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-MediumItalic'; src: url('fonts/Poppins-MediumItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Regular'; src: url('fonts/Poppins-Regular.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-SemiBold'; src: url('fonts/Poppins-SemiBold.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-SemiBoldItalic'; src: url('fonts/Poppins-SemiBoldItalic.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-Thin'; src: url('fonts/Poppins-Thin.ttf') format('truetype'); }
+@font-face  { font-family: 'Poppins-ThinItalic'; src: url('fonts/Poppins-ThinItalic.ttf') format('truetype'); }
+
+
+* {
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1a4488;
+}
+
+.ScrollPane {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.right .ct{
+  background-color: white;
+}
+.scr,
+.pane {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background: url("imagenes/00.gif") no-repeat center center;
+}
+
+.scr[data-id="Welcome1"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/00.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome2"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/2.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome3"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/01.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome4"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/02.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome5"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/03.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome6"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/7.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome7"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/04.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome8"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/10.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome9"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/11.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome10"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/05.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome11"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/13.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome12"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/06.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome13"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/07.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.scr[data-id="Welcome14"] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("imagenes/00.gif") no-repeat center center;
+  font-size: 4rem;
+  text-align: center;
+}
+
+b {
+  display: block;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 65%;
+  display: block;
+  color: #ffffff;
+  font-family: Poppins extralight;
+}
+
+h2 {
+  margin: 15% 3%;
+  font-size: 1.6rem;
+  display: block;
+  color: #ffffff;
+  font-family: Poppins;
+}
+
+h3 {
+  font-size: 1.8rem;
+  display: block;
+  color: #1a4488;
+  font-family: Poppins extralight;
+}
+
+span {
+  display: block;
+  text-align: center;
+}
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  z-index: 2;
+  top: 0; /* Anclamos el menú en la parte superior */
+  left: 0; /* Anclamos el menú en la parte izquierda */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu .imagenCorporativa {
+  width: 13%;
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+}
+
+.imagenCorporativa img {
+  width: 80%;
+}
+
+.menu .navegacion {
+  display: none;
+  width: 30%;
+  margin-top: 0;
+  height: 100vh;
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+.navegacion #menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  margin: 0 1rem;
+}
+.navegacion #menuList li:first-child {
+  margin-top: 2rem;
+}
+
+/*TEXTO MENU*/
+.navegacion #menuList li {
+  font-size: 1.2em;
+  width: 100%;
+  text-align: left;
+}
+
+.navegacion #menuList li i {
+  color: #1a4488;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+.horiz {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.horiz .pane {
+  display: inline-block;
+  width: 100%;
+}
+
+.ct {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin-top: 50px; */
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#titulo {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 5rem;
+}
+
+#gracias {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.an .ct {
+  transform: translate3D(0, 20px, 0) rotateX(90deg) scale(0.5);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.38, 1.47);
+}
+
+.ct h3 {
+  margin: 0px 80px;
+}
+.ct b {
+  margin: 0 2rem;
+}
+.left,
+.right {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  top: 0;
+}
+
+.right {
+  left: 30%;
+  width: 70%;
+}
+.scrollup {
+  position: absolute;
+  width: 200px;
+  top: 10px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 3000;
+  font-size: 2rem;
+  text-align: center;
+}
+.scrolldown {
+  position: absolute;
+  width: 200px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 3000;
+  font-size: 2rem;
+  text-align: center;
+}
+.an.visible .ct {
+  transform: translate3D(0, 0, 0) scale(1);
+  opacity: 1;
+}
+#Helper {
+  position: fixed;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  z-index: 3000;
+  font-size: 12px;
+  color: #1e1e1e;
+}
+
+#abrir {
+  font-size: 2.8rem;
+}
+
+#abrirMenu {
+  position: fixed;
+  z-index: 2;
+  margin-top: 2rem;
+  margin-left: 3.5rem;
+  color: #1a4488;
+  cursor: pointer;
+}
+
+#img-izquierda {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.nums {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.nums span {
+  margin-top: 20rem;
+}
+
+.numeracion {
+  margin-top: -6rem;
+  font-size: 13rem;
+  color: #ffffff;
+  opacity: 0.5;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.fixIcon {
+  justify-content: end;
+}
+
+.scrolldown,
+.scrollup {
+  cursor: pointer;
+  color: #1a4488;
+  font-size: 2em;
+}
+
+.nextSent,
+.prevSent {
+  position: fixed;
+  z-index: 99999;
+  font-size: 3rem;
+  color: #1a4488;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.prevSent {
+  bottom: 15%;
+}
+
+@-webkit-keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@media (max-width: 1400px) {
+  .ct b {
+    font-size: 3rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
+  }
+  .nums {
+    gap: 0;
+  }
+}
+
+@media(max-width: 845px) {
+  .left .ct b h2{
+    font-size: 1em;
+  }
+
+  .nextSent,
+  .prevSent {
+    font-size: 2rem;
+  }
+  
+  .ct b {
+    font-size: 2rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
+  }
+  .left .ct b h2{
+    font-size: 1.2rem;
+  }
+
+  .ct h3{
+    font-size: 1.3rem;
+  }
+  
+  .numeracion{
+    font-size: 8rem;
+  }
+  .nums span{
+    margin-top: 10rem;
+  }
+}
+
+/* media mobile*/
+@media (max-width: 599px) {
+
+  .numeracion {
+    margin-top: -6rem;
+    font-size: 7rem;
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 30% 3%;
+    font-size: 1.1rem;
+    display: block;
+    color: #ffffff;
+    font-family: Poppins;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    display: block;
+    color: #1a4488;
+    font-family: Poppins extralight;
+  }
+
+  .navegacion #menuList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 0 0.5rem;
+    padding-left: 1.3rem;
+  }
+
+  .navegacion #menuList li {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .prevSent {
+    bottom: 17%;
+  }
+
+  .menu .imagenCorporativa {
+    width: 20%;
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .imagenCorporativa img{
+    width: 120%;
+  }
+  .ct b {
+    font-size: 1.8rem; /* Tamaño de fuente de 3rem cuando la pantalla es más pequeña o igual a 1400px */
+  }
+  .left .ct b h2{
+    font-size: 1rem;
+  }
+
+  .ct h3{
+    font-size: 1.1rem;
+  }
+  
+  .numeracion{
+    font-size: 7rem;
+  }
+  .nums {
+    gap: 0;
+  }
+}
+
+@media (max-width: 427px) {
+
+  .menu .navegacion {
+    width: 40%;    
+  }
+  .enlace 
+  {
+    font-size: 10px;
+  }
+  .ct b {
+    font-size: 1.5rem;
+  }
+  .left .ct b h2{
+    font-size: 10px;
+  }
+
+  .ct h3{
+    font-size: 12px;
+  }
+  
+  .numeracion{
+    font-size: 3.5rem;
+  }
+  .nums {
+    gap: 2rem;
+  }
+}
